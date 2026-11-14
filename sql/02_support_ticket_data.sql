@@ -1,0 +1,8 @@
+-- Insert messy, unclassified support tickets into the ITSM incidents table
+INSERT INTO ap.itsm_incidents (ticket_id, submitted_date, user_department, raw_ticket_text, resolution_status) VALUES
+('INC-1001', '2026-11-10 08:30:00', 'Procurement', 'Hey team, our main tier-1 supplier Acme Corp is locked out of their supplier portal and cannot submit invoices for the month-end billing cycle. They are getting an invalid credentials error even after a password reset.', 'Open'),
+('INC-1002', '2026-11-10 09:15:00', 'Accounts Payable', 'Invoice #INV-99482 for Global Logistics is on a hard block because the PO quantity is 500 units but the Goods Receipt only shows 450 units received. AP manager approval needed to clear or adjust.', 'Open'),
+('INC-1003', '2026-11-10 10:00:00', 'Finance', 'The automated approval workflow for POs over $50,000 completely hung today. The routing rule to the VP of Finance is failing with a null pointer exception in the ERP integration service.', 'Open'),
+('INC-1004', '2026-11-10 11:45:00', 'Supply Chain', 'We have duplicate electronic data interchange (EDI) 810 invoice transmissions coming in from Apex Steel. Need to ensure our staging table catches these before they post twice to the ledger.', 'Open'),
+('INC-1005', '2026-11-10 13:20:00', 'Procurement', 'New buyer onboarding issue: Sarah Jenkins cannot see the restricted material catalog items in SAP MM. Her role assignment seems to be missing the correct purchasing group attribute.', 'Open'),
+('INC-1006', '2026-11-10 14:05:00', 'Accounts Payable', 'Tax mismatch on foreign vendor payment. The VAT code applied is 0% instead of standard 20% for UK services, and now the tax reconciliation report is failing.', 'Open');
