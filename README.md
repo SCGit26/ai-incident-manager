@@ -71,7 +71,7 @@ Set the following environment variables in your operating system (e.g., Windows 
 
 ---
 
-### Optional Scheduled Automation (Windows Task Scheduler)
+### Scheduled Automation (Windows Task Scheduler)
 To run the agent automatically (e.g., daily at 8:00 AM):
 1. Open **Windows Task Scheduler** and select **Create Basic Task**.
 2. Set the trigger to **Daily** at your desired execution time.
